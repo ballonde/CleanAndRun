@@ -302,6 +302,10 @@ MonoBehaviour:
   obstacles:
   - {fileID: 8545335587820762294, guid: a750116387a2a634c8979bde5cb53d26, type: 3}
   - {fileID: 8545335587820762294, guid: 42b3bb6f7c2d6c343ba11a918984e055, type: 3}
+  - {fileID: 6690533662300113195, guid: 448d14947d2ab614791ff7b443eaab3d, type: 3}
+  - {fileID: 6690533662300113195, guid: a93d04915b062db49b087323634c12c4, type: 3}
+  - {fileID: 6690533662300113195, guid: fe98c8ed7318103499c1a93f198fca45, type: 3}
+  - {fileID: 6690533662300113195, guid: 41d0c58cb452deb4ca0ad482538acb28, type: 3}
   spawnPoints:
   - {fileID: 1851345355}
   - {fileID: 633614173}

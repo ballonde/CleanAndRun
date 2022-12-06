@@ -13,6 +13,11 @@ public class ObstacleManager : MonoBehaviour
     float maxChrono;
     public float speed;
 
+    int randomObstacle;
+    int randomObstacleSave;
+    int randomSpawn;
+    int randomSpawnSave;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,8 +44,20 @@ public class ObstacleManager : MonoBehaviour
 
     void SpawnObstacle()
     {
-        var randomObstacle = Random.Range(0, obstacles.Count);
-        var randomSpawn = Random.Range(0, spawnPoints.Count);
+        randomObstacle = Random.Range(0, obstacles.Count);
+        while (randomObstacle == randomObstacleSave)
+        {
+            randomObstacle = Random.Range(0, obstacles.Count);
+        }
+        randomObstacleSave = randomObstacle;
+
+        randomSpawn = Random.Range(0, spawnPoints.Count);
+        while (randomSpawn == randomSpawnSave)
+        {
+            randomSpawn = Random.Range(0, spawnPoints.Count);
+        }
+        randomSpawnSave = randomSpawn;
+
         Instantiate(obstacles[randomObstacle], spawnPoints[randomSpawn].transform.position, Quaternion.identity);
     }
 }
